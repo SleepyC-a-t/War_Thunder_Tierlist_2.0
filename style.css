@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    
+    flex: 1;
+
+    flex-grow: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: gray;
+    gap: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+header{
+    width: 100%;
+    height: 4dvh;
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex: 1;
+}
+
+body{
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 2dvh;
+    background: linear-gradient(to top, lightgray, gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+}
+
+nav{
+    width: 100%;
+    height: 3dvh;
+    background: linear-gradient(to top, gray, darkgray);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 2%;
+    flex: 1;
+}
+
+.lobby > a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(lightgray, gray);
+    border-radius: 75px;
+    box-shadow: 5px 5px 10px rgb(87, 87, 87);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.lobby > a:hover{
+    background: radial-gradient(gray, darkgray);
+    border-radius: 75px;
+    box-shadow: 5px 5px 10px rgb(87, 87, 87);
+}
+
+h1{
+    font: italic bold 64px "Fira Sans",  serif;
+}
+
+h2{
+    font: italic bold 48px "Fira Sans",  sans-serif;
+}
+
+.ranking{
+    min-height: 82.5dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+}
+
+.rank{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(lightgray, gray);
+    padding: 50px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px rgb(87, 87, 87);
+    width: 60%;
+    height: 80dvh;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font: italic bold 32px "Fira Sans",  serif;
+}
+
+.li{
+    text-decoration: none;
+    color: black;
+    font: italic bold 32px "Fira Sans",  serif;
+    background: rgb(160, 158, 158);
+    border-radius: 100px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.li:hover{
+    background: rgb(115, 113, 113);
+}
+
+@media screen and (max-width: 800px) {
+main{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 100dvh;
+}
+h1{
+    font: italic bold 32px "Fira Sans",  serif;
+}
+h2{
+    font: italic bold 24px "Fira Sans",  serif;
+}
+nav a{
+    font: italic bold 16px "Fira Sans",  serif;
+}
+.rank{
+    width: 80%;
+}
+}
